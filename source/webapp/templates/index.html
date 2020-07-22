@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Calculator</title>
+    {% csrf_token %}
+</head>
+<body>
+    <div class="container">
+        <h2>Calculator</h2>
+        <form action="/" method="post">
+        {% csrf_token %}
+            <div class = "numbers">
+                <p>First number:   <input type="number" required name="number_1"/></p>
+                <p>Second number: <input type="number" required name="number_2"/></p>
+                <br/>
+            </div>
+                <br/>
+            <div class = "radio">
+                <input name="operation" type="radio" value="plus" checked> add <br/>
+                <input name="operation" type="radio" value="minus"> subtract <br/>
+                <input name="operation" type="radio" value="multiply"> multiply <br/>
+                <input name="operation" type="radio" value="divide"> divide<br/>
+                <p><input type="submit" value="Calculate"/></p>
+            </div>
+        </form>
+        <h2>Result: {{ number_1 }} {{ operation }} {{ number_2 }} = {{ result }}</h2>
+    </div>
+</body>
+</html>
