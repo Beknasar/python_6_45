@@ -1,0 +1,164 @@
+[
+{
+  "model": "webapp.article",
+  "pk": 1,
+  "fields": {
+    "title": "New Article",
+    "text": "long long long - text",
+    "author": "Ivan Ivanych",
+    "status": "new",
+    "created_at": "2020-07-22T18:02:44.075Z",
+    "updated_at": "2020-07-22T18:02:44.075Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 2,
+  "fields": {
+    "title": "Another Article",
+    "text": "My awesome article 0",
+    "author": "Me",
+    "status": "new",
+    "created_at": "2020-07-23T06:47:36.870Z",
+    "updated_at": "2020-07-23T06:47:36.870Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 3,
+  "fields": {
+    "title": "Article 1",
+    "text": "My awesome article 1",
+    "author": "Me",
+    "status": "rejected",
+    "created_at": "2020-07-22T18:10:13.895Z",
+    "updated_at": "2020-07-22T18:10:13.895Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 4,
+  "fields": {
+    "title": "Article 2",
+    "text": "My awesome article 2",
+    "author": "Me",
+    "status": "new",
+    "created_at": "2020-07-22T18:10:13.940Z",
+    "updated_at": "2020-07-22T18:10:13.940Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 5,
+  "fields": {
+    "title": "Article 3",
+    "text": "My awesome article 3",
+    "author": "Me",
+    "status": "new",
+    "created_at": "2020-07-22T18:10:13.985Z",
+    "updated_at": "2020-07-22T18:10:13.985Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 6,
+  "fields": {
+    "title": "Article 4",
+    "text": "My awesome article 4",
+    "author": "Me",
+    "status": "new",
+    "created_at": "2020-07-22T18:10:14.031Z",
+    "updated_at": "2020-07-22T18:10:14.031Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 7,
+  "fields": {
+    "title": "Article 5",
+    "text": "My awesome article 57",
+    "author": "Me",
+    "status": "moderated",
+    "created_at": "2020-07-22T18:10:14.078Z",
+    "updated_at": "2020-07-23T07:06:17.914Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 8,
+  "fields": {
+    "title": "Article 6",
+    "text": "My awesome article 6",
+    "author": "Me",
+    "status": "new",
+    "created_at": "2020-07-22T18:10:14.122Z",
+    "updated_at": "2020-07-22T18:10:14.122Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 9,
+  "fields": {
+    "title": "Article 7",
+    "text": "My awesome article 7",
+    "author": "Me",
+    "status": "moderated",
+    "created_at": "2020-07-22T18:10:14.167Z",
+    "updated_at": "2020-07-22T18:10:14.167Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 10,
+  "fields": {
+    "title": "Article 8",
+    "text": "My awesome article 8",
+    "author": "Me",
+    "status": "new",
+    "created_at": "2020-07-22T18:10:14.213Z",
+    "updated_at": "2020-07-22T18:10:14.214Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 11,
+  "fields": {
+    "title": "Article 9",
+    "text": "My awesome article 9",
+    "author": "Me",
+    "status": "moderated",
+    "created_at": "2020-07-22T18:10:14.259Z",
+    "updated_at": "2020-07-22T18:10:14.259Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 12,
+  "fields": {
+    "title": "Title",
+    "text": "Text",
+    "author": "author",
+    "status": "new",
+    "created_at": "2020-07-23T11:10:11.435Z",
+    "updated_at": "2020-07-23T11:10:11.436Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$CrvshrLwUJ1f$TRDaUqqHk4qT34wP9ZTgTmFgtxmcE8H83qeCuOrdlZ4=",
+    "last_login": "2020-07-23T06:58:26Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "\u0410\u0434\u043c\u0438\u043d",
+    "last_name": "\u0410\u0434\u043c\u0438\u043d\u043e\u0432",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-07-23T06:58:13Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
