@@ -12,6 +12,12 @@ def index_view(request):
     return render(request, 'index.html', context={
         'articles': data })
 
+def article_view(request):
+    article_id = request.GET.get('pk')
+    article = Article.objects.get(pk=article_id)
+    context = {'article': article}
+    return render(request, 'article_view.html', context)
+
 def article_create_view(request):
     if request.method == 'GET':
         return render(request, 'article_create.html', context={
