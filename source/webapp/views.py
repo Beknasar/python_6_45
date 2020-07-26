@@ -12,8 +12,8 @@ def index_view(request):
     return render(request, 'index.html', context={
         'articles': data })
 
-def article_view(request):
-    article_id = request.GET.get('pk')
+def article_view(request, pk):
+    # article_id = request.GET.get('pk')
     # Вариант 1
     # article = Article.objects.filter(pk=article_id)
     # if len(article) == 0:
@@ -23,7 +23,7 @@ def article_view(request):
     #     article = Article.objects.get(pk=article_id)
     # except Article.DoesNotExist:
     #     raise Http404
-    article = get_object_or_404(Article, pk=article_id)
+    article = get_object_or_404(Article, pk=pk)
     context = {'article': article}
     return render(request, 'article_view.html', context)
 
@@ -43,6 +43,6 @@ def article_create_view(request):
                                          author=author,
                                          status=status)
 
-        return redirect(f'/article?pk={article.pk}')
+        return redirect(f'/article/{article.pk}/')
     else:
         return HttpResponseNotAllowed(permitted_methods=['GET', 'POST'])
